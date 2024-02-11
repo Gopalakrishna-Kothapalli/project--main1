@@ -5,7 +5,7 @@ def main():
         """
         <style>
             body {
-                background-color: white;
+                background-color: lightgreen;
             }
             .title {
                 font-size: 24px;
@@ -55,11 +55,20 @@ def main():
         unsafe_allow_html=True
     )
 
+    st.markdown(
+        """
+        <div class='title'>Title of the Page</div>
+        <div class='description-box'>
+            Description goes here.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     if st.button('Next', key='next_button'):
         st.empty()  # Clear the content
         st.markdown(
             """
-            <div class='title'>Title of the Page</div>
             <div class='image-container'>
                 <div>
                     <img src="https://via.placeholder.com/150" alt="Student Image" style="width: 150px; height: 150px; border-radius: 50%;">
@@ -78,21 +87,6 @@ def main():
                     <button class='image-button'>Specifications</button>
                 </div>
             </div>
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.markdown(
-            """
-            <div class='title'>Title of the Page</div>
-            <div class='description-box'>
-                Description goes here.
-            </div>
-            <script>
-                document.querySelector('.next-button').addEventListener('click', () => {
-                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-                });
-            </script>
             """,
             unsafe_allow_html=True
         )
