@@ -84,7 +84,6 @@ Whether you're a tech-savvy professional, a studious student, or simply seeking 
 
 
 if st.button('Next', key='next_button'):
-   
     st.empty()  # Clear the content
     st.markdown(
         """
