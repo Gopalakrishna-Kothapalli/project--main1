@@ -4,6 +4,9 @@ def main():
     st.markdown(
         """
         <style>
+            body {
+                background-color: white;
+            }
             .title {
                 font-size: 24px;
                 font-weight: bold;
@@ -16,8 +19,8 @@ def main():
                 border-radius: 10px;
             }
             .next-button {
-                background-color: green;
-                color: white;
+                background-color: lightblue;
+                color: black;
                 font-size: 16px;
                 font-weight: bold;
                 padding: 10px 20px;
@@ -79,6 +82,7 @@ def main():
                 <div class='description-box'>
                     Description goes here.
                 </div>
+                <button class='next-button'>Next</button>
             </div>
             """,
             unsafe_allow_html=True
@@ -86,6 +90,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
