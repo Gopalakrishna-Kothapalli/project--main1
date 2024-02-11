@@ -11,7 +11,7 @@ def main():
                 font-size: 24px;
                 font-weight: bold;
                 font-style: italic;
-                color: white;
+                color: black;
                 text-align: center;
                 margin-top: 50px;
             }
@@ -93,5 +93,51 @@ def main():
             unsafe_allow_html=True
         )
 
-if __name__ == "__main__":
-    main()
+        st.subheader("Student Preferences:")
+        st.markdown("### Student:")
+        st.markdown("1. *Intended Use:*")
+        intended_use_options = st.multiselect(
+            "Select intended use:",
+            ["Studying", "Programming", "Gaming", "Multimedia"]
+        )
+
+        st.markdown("2. *Preferred Brands or Models:*")
+        preferred_brands_options = st.multiselect(
+            "Select preferred brands or models:",
+            ["Anything cool! (all)", "Tech-savvy picks! (dell, hp)", "ASUS", "HP", "Dell", "Lenovo", "Apple (MacBook Air/Pro)", "Others (please specify)"]
+        )
+
+        st.markdown("3. *Processor Performance:*")
+        processor_performance_options = st.multiselect(
+            "Select processor performance:",
+            ["Basic tasks (Intel Core i3 or equivalent AMD)", "Moderate multitasking (Intel Core i5 or equivalent AMD Ryzen 5)", "Intensive tasks (Intel Core i7/i9 or equivalent AMD Ryzen 7/9)"]
+        )
+
+        st.markdown("4. *Budget Range:*")
+        budget_range_options = st.multiselect(
+            "Select budget range:",
+            ["Bargain hunter (Under 40k)", "Mid-range magic (40k - 55k)", "Sweet spot spender (55k - 70k)", "Sky's the limit (70k - 85k)", "Ultimate splurge (85k above)"]
+        )
+
+        st.markdown("5. *Operating System Preference:*")
+        os_preference_options = st.multiselect(
+            "Select operating system preference:",
+            ["The classic! (windows)", "For that sleek vibe! (macOs)", "Feeling adventurous! (Linux)"]
+        )
+
+        st.markdown("6. *RAM Requirement:*")
+        ram_requirement_options = st.multiselect(
+            "Select RAM requirement:",
+            ["Basic needs (4GB - 8GB)", "Better performance (8GB - 16GB)", "Future-proofing! (16GB+)"]
+        )
+
+        st.markdown("7. *Desired Storage Space:*")
+        storage_space_options = st.multiselect(
+            "Select desired storage space:",
+            ["Lite storage (128GB - 256GB)", "More space, more fun! (256GB - 512GB)", "Store it all! (512GB - 1TB)", "Who needs limits! (1TB+)"]
+        )
+
+        st.markdown("8. *Preferred Screen Size:*")
+        screen_size_options = st.multiselect(
+            "Select preferred screen size:",
+            ["Compact is cute (11 - 13 inches)", "Standard and steady (14 - 15 inches)", "Big
