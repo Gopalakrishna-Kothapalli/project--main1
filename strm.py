@@ -5,7 +5,7 @@ def main():
         """
         <style>
             body {
-                background-color: blue;
+                background-color: lightgreen;
             }
             .title {
                 font-size: 24px;
@@ -30,7 +30,7 @@ def main():
                 padding: 10px 20px;
                 border-radius: 5px;
                 text-align: center;
-                margin-top: 20px;
+                margin-top: 30px; /* Increased margin-top */
             }
             .image-container {
                 display: flex;
@@ -61,6 +61,8 @@ def main():
         <div class='description-box'>
             Description goes here.
         </div>
+        <br> <!-- Adding space between description and button -->
+        <br>
         """,
         unsafe_allow_html=True
     )
