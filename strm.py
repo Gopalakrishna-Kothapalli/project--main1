@@ -44,9 +44,17 @@ def main():
         st.markdown(
             """
             <div style='background-color: white; padding: 20px;'>
-                <div class='title'>Title of the Page</div>
+                <div class='title'>-- User centric Laptop Recommendation --</div>
                 <div class='description-box'>
-                    Description goes here.
+                    Welcome to our revolutionary laptop recommendation tool! Are you tired of shifting through endless options, unsure of which laptop suits your needs best? Let us simplify the process for you. Our intelligent system takes into account your unique preferences and requirements to generate tailored recommendations that fit like a glove.
+
+Discovering the perfect laptop has never been easier:
+- Answer a few simple questions tailored to your expertise level and needs.
+- Explore a comprehensive range of specifications and features, from processing power to display quality.
+- Receive personalized recommendations that align perfectly with your preferences and budget.
+
+Whether you're a tech-savvy professional, a studious student, or simply seeking a reliable companion for your daily tasks, we've got you covered. Let us guide you towards the laptop of your dreams!
+.
                 </div>
                 <a href="/redirect" class='get-started-button'>Get Started</a>
             </div>
