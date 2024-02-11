@@ -11,7 +11,7 @@ def main():
                 font-size: 24px;
                 font-weight: bold;
                 font-style: italic;
-                color: black;
+                color: white;
                 text-align: center;
                 margin-top: 50px;
             }
