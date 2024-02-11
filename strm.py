@@ -26,7 +26,7 @@ def main():
                 
             }
             .next-button {
-                background-color: lightblue;
+                background-color: green;
                 color: black;
                 font-size: 16px;
                 font-weight: bold;
