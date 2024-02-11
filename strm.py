@@ -29,19 +29,18 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.markdown(
-        """
-        <div style='background-color: blue; padding: 20px;'>
-            <div class='title'>Title of the Page</div>
-            <div class='description-box'>
-                Description goes here.
+    if st.button('Get Started'):
+        st.empty()  # Clear the content
+        st.markdown(
+            """
+            <div style='background-color: facebook blue; padding: 20px;'>
+                <div class='title'>Hi Gopal</div>
             </div>
-            <button class='get-started-button'>Get Started</button>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+            """,
+            unsafe_allow_html=True
+        )
 
 if __name__ == "__main__":
     main()
+
 
