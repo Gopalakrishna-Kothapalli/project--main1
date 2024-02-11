@@ -31,7 +31,7 @@ def main():
 
     st.markdown(
         """
-        <div style='background-color: lightblue; padding: 20px;'>
+        <div style='background-color: blue; padding: 20px;'>
             <div class='title'>Title of the Page</div>
             <div class='description-box'>
                 Description goes here.
