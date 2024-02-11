@@ -5,7 +5,7 @@ def main():
         """
         <style>
             body {
-                background-color: lightgreen;
+                background-color: blue;
             }
             .title {
                 font-size: 24px;
