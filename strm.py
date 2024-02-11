@@ -80,8 +80,25 @@ Whether you're a tech-savvy professional, a studious student, or simply seeking 
         """,
         unsafe_allow_html=True
     )
+global global_var
+@st.cache
+def initialize_variable():
+    # Initialize your variable here
+    
+
+    # Increment the global variable
+    global_var += 1
+
+# Call the function to initialize the variable
+
+
+# Now you can use `my_variable` throughout your Streamlit app
+st.write("My variable:", my_variable)
 
     if st.button('Next', key='next_button'):
+         my_variable = initialize_variable()
+    if my_variable > 0:
+        
         st.empty()  # Clear the content
         st.markdown(
             """
