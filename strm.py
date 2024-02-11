@@ -140,4 +140,75 @@ def main():
         st.markdown("8. *Preferred Screen Size:*")
         screen_size_options = st.multiselect(
             "Select preferred screen size:",
-            ["Compact is cute (11 - 13 inches)", "Standard and steady (14 - 15 inches)", "Big
+            ["Compact is cute (11 - 13 inches)", "Standard and steady (14 - 15 inches)", "Big is bold (15+ inches)"]
+        )
+
+        st.markdown("9. *Graphics-Intensive Tasks:*")
+        graphics_tasks_options = st.multiselect(
+            "Select graphics-intensive tasks:",
+            ["Casual gamer (Light gaming)", "Multitask master (Moderate gaming and video editing)", "Gaming champ (Heavy gaming and pro editing)"]
+        )
+
+        st.markdown("10. *Display Panel Type:*")
+        display_panel_options = st.multiselect(
+            "Select display panel type:",
+            ["Colors matter (IPS for better color)", "Speed is key (TN for faster response)"]
+        )
+
+        st.markdown("11. *Display Resolution:*")
+        display_resolution_options = st.multiselect(
+            "Select display resolution:",
+            ["Standard HD (1366 x 768)", "Full HD (1920 x 1080)", "Super sharp (QHD or higher)"]
+        )
+
+        st.markdown("12. *Portability Importance:*")
+        portability_options = st.multiselect(
+            "Select portability importance:",
+            ["Feather-light (Very important)", "Balanced buddy (Moderate)", "No big deal (Not a priority)"]
+        )
+
+        st.markdown("13. *Battery Life Priority:*")
+        battery_options = st.multiselect(
+            "Select battery life priority:",
+            ["Marathon mode (Long battery life)", "Day-to-day (Moderate battery life)", "Plugged in always (Not a concern)"]
+        )
+
+        st.markdown("14. *Touchscreen Preference:*")
+        touchscreen_options = st.multiselect(
+            "Select touchscreen preference:",
+            ["Swipe and tap (Yes, I prefer a touchscreen)", "Buttons are enough (No, I don't need a touchscreen)"]
+        )
+
+        st.markdown("15. *Necessary Ports and Connectivity:*")
+        connectivity_options = st.multiselect(
+            "Select necessary ports and connectivity:",
+            ["USB-C is a must!", "HDMI for shows!", "SD card for pics!", "Thunderbolt for future!", "Surprise me!"]
+        )
+
+        st.markdown("16. *Importance of Upgradability:*")
+        upgradability_options = st.multiselect(
+            "Select importance of upgradability:",
+            ["Tech explorer (I love upgrades!)", "Meh, not bothered (Upgradability is not a priority)"]
+        )
+
+        st.markdown("17. *Keyboard Type:*")
+        keyboard_options = st.multiselect(
+            "Select keyboard type:",
+            ["Standard keys", "Backlit for flair", "Mechanical for the win!"]
+        )
+
+        st.markdown("18. *Fingerprint Reader/Security Features:*")
+        fingerprint_options = st.multiselect(
+            "Select fingerprint reader/security features:",
+            ["Unlock with a touch (Fingerprint reader)", "I'm good with passwords (No specific need)"]
+        )
+
+        st.markdown("19. *Warranty and Support:*")
+        warranty_options = st.multiselect(
+            "Select warranty and support:",
+            ["All-inclusive package (Longer warranty, premium support)", "Standard deal is fine (Standard warranty is sufficient)"]
+        )
+
+if __name__ == "__main__":
+    main()
+
