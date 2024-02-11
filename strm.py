@@ -5,7 +5,7 @@ def main():
         """
         <style>
             body {
-                background-color: lightgreen;
+                background-color: green;
             }
             .title {
                 font-size: 24px;
@@ -17,11 +17,13 @@ def main():
             }
             .description-box {
                 background-color: pink;
+                font-style: italic;
+                color: blue;
                 padding: 20px;
                 border-radius: 10px;
-                text-align: right;
+                text-align: left;
                 margin-top: 20px;
-                color: light blue;
+                
             }
             .next-button {
                 background-color: lightblue;
