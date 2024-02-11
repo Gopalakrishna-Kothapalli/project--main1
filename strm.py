@@ -12,11 +12,15 @@ def main():
                 font-weight: bold;
                 font-style: italic;
                 color: black;
+                text-align: center;
+                margin-top: 50px;
             }
             .description-box {
                 background-color: pink;
                 padding: 20px;
                 border-radius: 10px;
+                text-align: center;
+                margin-top: 20px;
             }
             .next-button {
                 background-color: lightblue;
@@ -48,48 +52,49 @@ def main():
         unsafe_allow_html=True
     )
 
-    if st.button('Next', key='next_button'):
-        st.empty()  # Clear the content
-        st.markdown(
-            """
-            <div class='image-container'>
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Student Image" style="width: 150px; height: 150px;">
-                    <button class='image-button'>Student</button>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Teacher Image" style="width: 150px; height: 150px;">
-                    <button class='image-button'>Teacher</button>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Professional Image" style="width: 150px; height: 150px;">
-                    <button class='image-button'>Professional</button>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Specifications Image" style="width: 150px; height: 150px;">
-                    <button class='image-button'>Specifications</button>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+    st.markdown(
+        """
+        <div class='title'>Title of the Page</div>
+        <div class='description-box'>
+            Description goes here.
+        </div>
+        <button class='next-button' onclick="scrollToBottom()">Next</button>
+        <script>
+            function scrollToBottom() {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            }
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
 
-    else:
-        st.markdown(
-            """
-            <div style='background-color: white; padding: 20px;'>
-                <div class='title'>Title of the Page</div>
-                <div class='description-box'>
-                    Description goes here.
-                </div>
-                <button class='next-button'>Next</button>
+    st.markdown(
+        """
+        <div class='image-container'>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Student Image" style="width: 150px; height: 150px; border-radius: 50%;">
+                <button class='image-button'>Student</button>
             </div>
-            """,
-            unsafe_allow_html=True
-        )
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Teacher Image" style="width: 150px; height: 150px; border-radius: 50%;">
+                <button class='image-button'>Teacher</button>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Professional Image" style="width: 150px; height: 150px; border-radius: 50%;">
+                <button class='image-button'>Professional</button>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Specifications Image" style="width: 150px; height: 150px; border-radius: 50%;">
+                <button class='image-button'>Specifications</button>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 if __name__ == "__main__":
     main()
+
 
 
 
