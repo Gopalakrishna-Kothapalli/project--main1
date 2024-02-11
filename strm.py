@@ -8,6 +8,7 @@ def main():
                 font-size: 24px;
                 font-weight: bold;
                 font-style: italic;
+                color: black;
             }
             .description-box {
                 background-color: pink;
@@ -29,7 +30,7 @@ def main():
         unsafe_allow_html=True
     )
 
-    if st.button('Get Started'):
+    if st.button('Get Started', key='first_page_button'):
         st.empty()  # Clear the content
         st.markdown(
             """
@@ -47,7 +48,7 @@ def main():
                 <div class='description-box'>
                     Description goes here.
                 </div>
-                <button class='get-started-button'>Get Started</button>
+                <a href="/redirect" class='get-started-button'>Get Started</a>
             </div>
             """,
             unsafe_allow_html=True
@@ -55,6 +56,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
