@@ -88,11 +88,10 @@ def main():
             <div class='description-box'>
                 Description goes here.
             </div>
-            <button class='next-button' onclick="scrollToBottom()">Next</button>
             <script>
-                function scrollToBottom() {
+                document.querySelector('.next-button').addEventListener('click', () => {
                     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-                }
+                });
             </script>
             """,
             unsafe_allow_html=True
@@ -100,6 +99,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
