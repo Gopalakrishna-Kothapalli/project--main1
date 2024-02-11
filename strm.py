@@ -33,7 +33,7 @@ def main():
         st.empty()  # Clear the content
         st.markdown(
             """
-            <div style='background-color: facebook blue; padding: 20px;'>
+            <div style='background-color: blue; padding: 20px;'>
                 <div class='title'>Hi Gopal</div>
             </div>
             """,
