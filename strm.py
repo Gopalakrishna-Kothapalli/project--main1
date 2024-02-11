@@ -15,7 +15,22 @@ def main():
                 padding: 20px;
                 border-radius: 10px;
             }
-            .get-started-button {
+            .next-button {
+                background-color: green;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .image-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 50px;
+            }
+            .image-button {
                 background-color: green;
                 color: white;
                 font-size: 16px;
@@ -30,33 +45,40 @@ def main():
         unsafe_allow_html=True
     )
 
-    if st.button('Get Started', key='first_page_button'):
+    if st.button('Next', key='next_button'):
         st.empty()  # Clear the content
         st.markdown(
             """
-            <div style='background-color: facebook blue; padding: 20px;'>
-                <div class='title'>Hi Gopal</div>
+            <div class='image-container'>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Student Image" style="width: 150px; height: 150px;">
+                    <button class='image-button'>Student</button>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Teacher Image" style="width: 150px; height: 150px;">
+                    <button class='image-button'>Teacher</button>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Professional Image" style="width: 150px; height: 150px;">
+                    <button class='image-button'>Professional</button>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Specifications Image" style="width: 150px; height: 150px;">
+                    <button class='image-button'>Specifications</button>
+                </div>
             </div>
             """,
             unsafe_allow_html=True
         )
+
     else:
         st.markdown(
             """
             <div style='background-color: white; padding: 20px;'>
-                <div class='title'>-- User centric Laptop Recommendation --</div>
+                <div class='title'>Title of the Page</div>
                 <div class='description-box'>
-                    Welcome to our revolutionary laptop recommendation tool! Are you tired of shifting through endless options, unsure of which laptop suits your needs best? Let us simplify the process for you. Our intelligent system takes into account your unique preferences and requirements to generate tailored recommendations that fit like a glove.
-
-Discovering the perfect laptop has never been easier:
-- Answer a few simple questions tailored to your expertise level and needs.
-- Explore a comprehensive range of specifications and features, from processing power to display quality.
-- Receive personalized recommendations that align perfectly with your preferences and budget.
-
-Whether you're a tech-savvy professional, a studious student, or simply seeking a reliable companion for your daily tasks, we've got you covered. Let us guide you towards the laptop of your dreams!
-.
+                    Description goes here.
                 </div>
-                <a href="/redirect" class='get-started-button'>Get Started</a>
             </div>
             """,
             unsafe_allow_html=True
@@ -64,6 +86,7 @@ Whether you're a tech-savvy professional, a studious student, or simply seeking 
 
 if __name__ == "__main__":
     main()
+
 
 
 
