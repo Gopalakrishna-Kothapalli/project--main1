@@ -81,16 +81,10 @@ Whether you're a tech-savvy professional, a studious student, or simply seeking 
         unsafe_allow_html=True
     )
 
-@st.cache
-def initialize_variable():
-    global global_var
-    global_var += 1
 
 
 if st.button('Next', key='next_button'):
-     my_variable = initialize_variable()
-if my_variable > 0:
-    
+   
     st.empty()  # Clear the content
     st.markdown(
         """
