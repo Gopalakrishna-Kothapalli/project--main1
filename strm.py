@@ -33,8 +33,21 @@ def main():
         st.empty()  # Clear the content
         st.markdown(
             """
-            <div style='background-color: blue; padding: 20px;'>
+            <div style='background-color: facebook blue; padding: 20px;'>
                 <div class='title'>Hi Gopal</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.markdown(
+            """
+            <div style='background-color: white; padding: 20px;'>
+                <div class='title'>Title of the Page</div>
+                <div class='description-box'>
+                    Description goes here.
+                </div>
+                <button class='get-started-button'>Get Started</button>
             </div>
             """,
             unsafe_allow_html=True
@@ -42,5 +55,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
