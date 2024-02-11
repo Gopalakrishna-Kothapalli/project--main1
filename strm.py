@@ -19,8 +19,9 @@ def main():
                 background-color: pink;
                 padding: 20px;
                 border-radius: 10px;
-                text-align: center;
+                text-align: right;
                 margin-top: 20px;
+                color: light blue;
             }
             .next-button {
                 background-color: lightblue;
